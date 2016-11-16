@@ -16,4 +16,10 @@ RSpec.describe Post, type: :model do
       expect(@post).to_not be_valid
     end
   end
+
+  describe "creation" do
+    it "has a new form that can be reached" do
+      visit new_posts_path
+    end
+  end
 end
